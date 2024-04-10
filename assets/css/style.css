@@ -42,3 +42,9 @@
     width: 40%;
     margin-bottom: 5%;
 }
+@media (max-width: 767px) {
+    /* Estilos para dispositivos móviles */
+    .carousel-caption {
+      display: block;
+    }
+  }
