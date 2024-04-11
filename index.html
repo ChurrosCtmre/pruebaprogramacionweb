@@ -9,31 +9,31 @@
     <title>Taller Mecánico Rayo Makween</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <img src="./assets/img/logotaller.png" alt="logotaller">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <img src="./assets/img/logomenucelular.png" alt="Custom Toggler Icon">
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./index.html">| Inicio |</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./login.html">| Iniciar sesión |</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./registro.html">| Registrarse |</a>
-                </li>
-            </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Escriba para buscar" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img src="./assets/img/logotaller.png" alt="logotaller">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <img src="./assets/img/logomenucelular.png" alt="Custom Toggler Icon">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">| Inicio |</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login.html">| Iniciar sesión |</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./registro.html">| Registrarse |</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Escriba para buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
     
 <div id="carouselExampleCaptions" class="carousel slide">
@@ -80,18 +80,23 @@
         <h2 class="textoazul">Contáctanos</h2>
       </center>
 
-      <form class="formularioindex">
+      <form class="formularioindex" id="contactForm">
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
-          <input type="email" class="form-control" id="exampleInputEmail1">
+            <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="exampleInputEmail1">
         </div>
         <div class="mb-3">
-          <label for="exampleInputText1" class="form-label">Mensaje</label>
-          <input type="text" class="form-control" id="exampleInputText1">
+            <label for="exampleInputText1" class="form-label">Mensaje</label>
+            <input type="text" class="form-control" id="exampleInputText1">
         </div>
-        <center><button type="submit" class="btn btn-primary">Enviar</button></center>
-      </form>
+        <center>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <div id="mensajeEnviado" style="display: none;" class="textoazul">Mensaje enviado</div>
+        </center>
+    </form>
+    
     
     <script src="./js/bootstrap.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
